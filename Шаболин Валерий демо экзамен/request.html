@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="request.css">
+    <title>Страница формирования заявки</title>
+</head>
+<body>
+
+    <nav class="header">
+        <div class="header-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamb-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu">
+                <li><a href="reg.html">Регистрация</a></li>
+                <li><a href="auth.html">Авторизация</a></li>
+                <li><a href="orders.html">Заявки</a></li>
+                <li><a href="request.html">Создать заявку</a></li>
+                <li><a href="adm_panel.html">Панель администратора</a></li>
+            </ul>
+            <p class="logo">Починим!</p>
+        </div>
+    </nav>
+
+    <div class="banner">
+        <div class="banner-dop">
+            <h2 id="title">Создайте заявку</h2>
+            <h3>забронируйте дату ремонта!</h3>
+        </div>
+    </div>
+
+    <div class="block">
+        <div class="form container">
+            <h3>Формирование заявки</h3>
+            <div>
+                <label>Ваш автомобиль</label>
+                <div class="form-part">
+                    <input name="Mark" type="text" placeholder="Марка" required>
+                    <input name="Model" type="text" placeholder="Модель" required>
+                    <input name="Year" type="text" placeholder="Год выпуска" required>
+                </div>
+            </div>
+            <div>
+                <label>Причина обращения</label>
+                <div class="form-part">
+                    <textarea cols="25" rows="6" maxlength="120" 
+                    placeholder="Опишите вашу проблему" required></textarea>
+                </div>
+            </div>
+            <div>
+                <label>Дата бронирования</label>
+                <div class="form-part">
+                    <input name="date" type="datetime-local" required 
+                    min="2024-05-22T08:00" max="2024-07-22T21:00">
+                </div>
+            </div>
+            <input type="submit" value="Отправить заявку">
+        </div>
+    </div>
+
+</body>
+</html>
